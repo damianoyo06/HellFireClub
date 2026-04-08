@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hellfire Club - Home</title>
+
+    <link rel="stylesheet" href="assets/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+          window.localStorage.setItem("dark-mode", 0);
+      });
+  </script>
+</head>
+<body>
+
+  <div id="light-header" class="header">
+    <a href="home.html"><img src="assets/images/Hell fire Club Logo.png" alt=""></a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+      <i class="fa fa-bars"></i>
+    </a>  
+    <hr>
+    <div class="header-right">
+      <a class="active" href="home.html">Home</a>
+      <a href="visit.html">Visit</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a class="dm-toggle" href="para-home.html">Toggle</a>
+    </div>
+  </div>
+
+    <div class="image-banner"></div>
+
+    <div class="intro-text">
+      <h2>Welcome to the Hellfire Club Website</h2>
+      <p>Discover the rich history, scenic trails, and haunting tales of 
+        Dublin’s iconic Hellfire Club. Our website offers information on 
+        hiking trails, historical insights, and ghostly legends. Tag us on 
+        Instagram to share your photos! Toggle to dark mode for some darker 
+        content!</p>
+  </div>
+
+    <div class="arrow" onclick="scrollToContent()">⬇</div>
+
+    <div id="content">
+     <a href="visit.html">
+      <div class="content-section">
+          <img src="assets/images/map.png" alt="">
+          <div class="text">Visitor information, opening hours, accessibility etc.</div>
+      </div>
+     </a>
+      
+     <a href="about.html">
+      <div class="content-section">
+          <img src="assets/images/light-about-header-image.png" alt="">
+          <div class="text">Learn the history of the Hellfire Club, archaeologists say...</div>
+      </div>
+     </a>
+
+     <a href="gallery.html">
+      <div class="content-section">
+          <img src="assets/images/gallery/light/image4.jpg" alt="">
+          <div class="text">Check out the exciting hiking trails around the Hell Fire Club.</div>
+      </div>
+    </a>
+  </div>
+
+  <script>
+    function scrollToContent() {
+        document.getElementById('content').scrollIntoView({ behavior: 'smooth' });
+    }
+
+      function toggleMenu() {
+        var x = document.getElementById("light-header") || document.getElementById("dark-header");
+        if (x.className.includes("responsive")) {
+          x.className = x.className.replace(" responsive", "");
+        } else {
+          x.className += " responsive";
+        }
+      }
+      </script>
+</body>
+</html>

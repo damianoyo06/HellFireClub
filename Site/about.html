@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hellfire Club - About</title>
+
+    <link rel="stylesheet" href="assets/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            window.localStorage.setItem("dark-mode", 0);
+        });
+    </script>
+</head>
+<body>
+    <div id="light-header" class="header">
+        <a href="home.html "><img src="assets/images/Hell fire Club Logo.png" alt="Hellfire Club Logo"></a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+          </a>  
+        <hr>
+        <div class="header-right"> 
+          <a href="home.html">Home</a>
+          <a href="visit.html">Visit</a>
+          <a class="active" href="about.html">About</a>
+          <a href="gallery.html">Gallery</a>
+          <a class="dm-toggle" href="para-about.html">Toggle</a>
+        </div>
+    </div>
+    
+    <div id="about-header-image">
+        <img src="assets/images/light-about-header-image.png" alt="Hellfire Club Five Thousand Years of History">
+    </div>
+    <div id="about-timeline">
+
+        <div class="vertical-line"></div>
+        <div id="about-wrapper">
+            <div><img src="assets/images/homepagePhoto.jpg" alt=""></div>
+            <div>
+                <h1>1. Construction of Mount Pelier Lodge (1725-1730s)</h1>
+                <p>The Hellfire Club building, originally known as Mount Pelier Lodge, was constructed around 1725 by William Conolly, one of the wealthiest men in Ireland at the time. The lodge was designed as a hunting retreat, strategically located on Montpelier Hill, offering panoramic views of Dublin. However, controversy surrounded its construction, as Conolly used stone from ancient Neolithic passage tombs that once stood on the site.</p>
+                <p>Local legend suggests that disturbing these sacred tombs brought a curse upon the building. Soon after its completion, strange occurrences and misfortunes were reported, fueling superstitions that the site was haunted. Conolly himself died in 1729, only a few years after the lodge was built, adding to the belief that the location was cursed.</p>
+            </div>
+            <div>
+                <h1>2. The Hellfire Club Takes Over (1735-1741)</h1>
+                <p>By the mid-1730s, the abandoned hunting lodge became the meeting place for a secretive group known as the Hellfire Club. This elite society, made up of wealthy aristocrats, was notorious for its wild gatherings, excessive drinking, and alleged involvement in black magic and satanic rituals. The club was led by Richard Parsons, 1st Earl of Rosse, an eccentric nobleman known for his interest in the occult.</p>
+                <p>The members of the Hellfire Club were infamous for their blasphemous activities. Stories claim they held mock religious ceremonies, sacrificed animals, and even set fire to servants as part of their sinister initiation rites. One of the most well-known legends tells of a mysterious visitor who joined a card game at the club. When a player dropped a card and bent down to pick it up, he noticed the stranger had cloven hooves instead of feet—leading to the belief that the Devil himself had been in attendance.</p>
+                <p>This period cemented the club’s dark reputation, and rumors of paranormal activity began to spread across Dublin.</p>
+            </div>
+            <div><img src="assets/images/gallery/dark/image2.png" alt=""></div>
+            <div><img src="assets/images/gallery/light/image2.jpg" alt=""></div>
+            <div>
+                <h1>3. Destructive Fire and Abandonment (1741)</h1>
+                <p>In 1741, a mysterious fire broke out in the lodge, forcing the Hellfire Club to abandon the site. The exact cause remains unknown, but theories abound. Some say it was an accident during one of their wild gatherings, while others believe it was divine retribution for their blasphemy. A darker tale suggests that a terrified member, after witnessing something supernatural, set the building ablaze to destroy the evil within.</p> 
+                <p>Following the fire, the Hellfire Club relocated to another meeting place in Dublin, but their notorious reputation followed. Stories of dark rituals, spirit summonings, and sacrilegious acts ensured their infamy. Meanwhile, the ruined lodge on Montpelier Hill stood abandoned, its scorched remains a grim reminder of its past. Locals avoided the area, believing it cursed or haunted. Over time, nature reclaimed the site, yet its sinister reputation endured. To this day, whispers of ghostly figures and unexplained occurrences keep the legend of the Hellfire Club alive.</p>
+            </div>
+            <div>
+                <h1>4. Rise of Ghost Stories and Paranormal Legends (19th Century - Present)</h1>
+                <p>
+                  Despite being in ruins, the Hellfire Club continues to captivate those fascinated by Ireland’s haunted history. The lodge has been the subject of countless paranormal investigations, folklore, and urban legends for generations. Many visitors report an overwhelming sense of unease, as if being watched, while others claim to hear disembodied voices whispering through the wind or see shadowy figures moving among the crumbling walls. Some have even described sudden drops in temperature or an inexplicable feeling of dread.</p>
+                <p>Montpelier Hill itself has become a magnet for ghost hunters, history enthusiasts, and thrill-seekers hoping to witness something supernatural. The combination of its eerie ruins, chilling past, and the long-held belief that it was cursed from the very beginning ensures that the Hellfire Club remains one of Dublin’s most mysterious and haunting landmarks. Whether approached with skepticism or belief, the site continues to fuel the imagination, keeping its dark legend alive.</p>
+            </div>
+            <div><img src="assets/images/gallery/dark/image1.png" alt=""></div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-links">
+            <a href="https://www.instagram.com/hellfire_ie/">
+              <img src="assets/images/instagram.png" alt="Instagram">
+              @hellfire_ie
+            </a> 
+            <a href="mailto:placeholder@gmail.com">
+              <img src="assets/images/email.png" alt="Email">
+              HellFire email
+            </a>
+          </div>
+          <p class="footer-note">This page is not affiliated with Trinity College Dublin</p>
+          <p class="footer-copy">&copy; 2025 HellFire Club. All rights reserved.</p> 
+        </div>
+      </footer>
+
+      <script>
+        function toggleMenu() {
+          var x = document.getElementById("light-header") || document.getElementById("dark-header");
+          if (x.className.includes("responsive")) {
+            x.className = x.className.replace(" responsive", "");
+          } else {
+            x.className += " responsive";
+          }
+        }
+        </script>
+</body>
+</html>
